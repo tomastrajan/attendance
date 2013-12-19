@@ -9,10 +9,7 @@ import com.trajan.utils.attendance.model.enums.EventType;
 
 public class DayAnalyzer {
 
-	private ElapsedTime elapsedInside;
-
 	public DayAnalyzer() {
-		elapsedInside = new ElapsedTime();
 	}
 
 	public void analyzeDay(Day day) {
@@ -49,15 +46,9 @@ public class DayAnalyzer {
 			previousRow = currentRow;
 		}
 		total.setTime(inside.getTime() + outside.getTime());
-		elapsedInside.setElapsedTime(inside);
-		ElapsedTime elapsedOutside = new ElapsedTime(outside);
-		ElapsedTime elapsedTotal = new ElapsedTime(total);
-		DayRow helper = day.getRows().get(0);
-		System.out.println("-------------------------------------------------------");
-		System.out.println(helper.getName() + " " + helper.getSurname());
-		System.out.println("Inside: " + elapsedInside.toString());
-		System.out.println("Outside: " + elapsedOutside.toString());
-		System.out.println("Total: " + elapsedTotal.toString());
+		day.setElapsedInside(new ElapsedTime(inside));
+		day.setElapsedOutside(new ElapsedTime(outside));
+		day.setElapsedTotal(new ElapsedTime(total));
 	}
 
 	private boolean isArrive(DayRow row) {

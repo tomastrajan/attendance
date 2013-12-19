@@ -6,6 +6,7 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
+import com.trajan.utils.attendance.analyzer.DayAnalyzer;
 import com.trajan.utils.attendance.model.Day;
 import com.trajan.utils.attendance.model.DayRow;
 import com.trajan.utils.attendance.model.enums.EventType;
@@ -14,18 +15,20 @@ public class DayParser {
 
 	private BufferedReader data;
 	private Day day;
+	private String name;
+	private String surname;
+	private DayAnalyzer analyzer;
 
 	public DayParser() {
+		analyzer = new DayAnalyzer();
 	}
 
 	public void setData(BufferedReader data) {
 		this.data = data;
 		day = new Day();
+		name = null;
+		surname = null;
 		parseData();
-	}
-
-	public Day getDay() {
-		return day;
 	}
 
 	private void parseData() {
@@ -46,14 +49,34 @@ public class DayParser {
 				} else {
 					row.setType(EventType.LEAVE);
 				}
+				if (day.getDate() == null) {
+					day.setDate(df.parse(tokens[0]));
+				}
+				if (name == null) {
+					name = tokens[2].split("\\s")[1];
+				}
+				if (surname == null) {
+					surname = tokens[2].split("\\s")[0];
+				}
 				day.addRow(row);
 			}
+			analyzer.analyzeDay(day);
 			data.close();
 		} catch (IOException | ParseException e) {
 			e.printStackTrace();
 		}
 	}
 
+	public Day getDay() {
+		return day;
+	}
 
+	public String getName() {
+		return name;
+	}
+
+	public String getSurname() {
+		return surname;
+	}
 
 }
