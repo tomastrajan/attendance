@@ -5,7 +5,6 @@ import java.util.Date;
 public class ElapsedTime {
 
 	private Date elapsedTime;
-	private long elapsedDays;
 	private long elapsedHours;
 	private long elapsedMinutes;
 	private long elapsedSeconds;
@@ -26,7 +25,6 @@ public class ElapsedTime {
 		long daysInMilli = hoursInMilli * 24;
 		long elapsed = elapsedTime.getTime();
 
-		elapsedDays = elapsed / daysInMilli;
 		elapsed = elapsed % daysInMilli;
 		elapsedHours = elapsed / hoursInMilli;
 		elapsed = elapsed % hoursInMilli;
@@ -36,13 +34,13 @@ public class ElapsedTime {
 	}
 
 	public void printElapsedTime() {
-		System.out.printf("%d days, %d hours, %d minutes, %d seconds%n",
-				elapsedDays, elapsedHours, elapsedMinutes, elapsedSeconds);
+		System.out.printf("%d hours, %d minutes, %d seconds%n", elapsedHours,
+				elapsedMinutes, elapsedSeconds);
 	}
 
 	public String toString() {
-		return elapsedDays + " days, " + elapsedHours + " hours, "
-				+ elapsedMinutes + " minutes, " + elapsedSeconds + " seconds";
+		return elapsedHours + " hours, " + elapsedMinutes + " minutes, "
+				+ elapsedSeconds + " seconds";
 	}
 
 	public Date getElapsedTime() {

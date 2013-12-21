@@ -5,19 +5,22 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.trajan.utils.attendance.analyzer.DayAnalyzer;
-import com.trajan.utils.attendance.model.Day;
-import com.trajan.utils.attendance.model.DayRow;
+import com.trajan.utils.attendance.model.Person;
+import com.trajan.utils.attendance.model.Row;
 import com.trajan.utils.attendance.model.enums.EventType;
 
 public class DayParser {
 
-	private BufferedReader data;
-	private Day day;
-	private String name;
-	private String surname;
-	private DayAnalyzer analyzer;
+	private BufferedReader 	data;
+	private DayAnalyzer 	analyzer;
+	private List<Person>	persons;
+
+	private boolean 		personFound;
+	private int 			blankLineCounter;
 
 	public DayParser() {
 		analyzer = new DayAnalyzer();
@@ -25,58 +28,67 @@ public class DayParser {
 
 	public void setData(BufferedReader data) {
 		this.data = data;
-		day = new Day();
-		name = null;
-		surname = null;
+		personFound = false;
+		blankLineCounter = 0;
+		persons = new ArrayList<Person>();
+
 		parseData();
 	}
 
 	private void parseData() {
+		Person foundPerson = null;
 		String line;
 		try {
 			while ((line = data.readLine()) != null) {
+
+				if (!personFound) {
+					if (line.contains("Pro osobu:")) {
+						personFound = true;
+						foundPerson = new Person();
+						line = line.replace("Pro osobu: ", "");
+						String[] tokens = line.split(" ");
+						foundPerson.setName(tokens[1]);
+						foundPerson.setSurname(tokens[0]);
+						persons.add(foundPerson);
+					}
+					continue;
+				}
+
+				if (line.matches("^\\s*$")) {
+					blankLineCounter++;
+					if (blankLineCounter > 1) {
+						personFound = false;
+						blankLineCounter = 0;
+					}
+					continue;
+				}
+
 				String[] tokens = line.split("\\s{2,}");
 				if (tokens[0].substring(0,1).matches("[a-zA-Z]|-")) {
 					continue;
 				}
-				DayRow row = new DayRow();
+				Row row = new Row();
 				DateFormat df = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
 				row.setTime(df.parse(tokens[0]));
-				row.setName(tokens[2].split("\\s")[1]);
-				row.setSurname(tokens[2].split("\\s")[0]);
 				if (tokens[4].contains("Vstup")) {
 					row.setType(EventType.ARRIVE);
 				} else {
 					row.setType(EventType.LEAVE);
 				}
-				if (day.getDate() == null) {
-					day.setDate(df.parse(tokens[0]));
-				}
-				if (name == null) {
-					name = tokens[2].split("\\s")[1];
-				}
-				if (surname == null) {
-					surname = tokens[2].split("\\s")[0];
-				}
-				day.addRow(row);
+				foundPerson.getRows().add(row);
 			}
-			analyzer.analyzeDay(day);
+
+			for (Person person : persons) {
+				analyzer.analyzePerson(person);
+			}
 			data.close();
 		} catch (IOException | ParseException e) {
 			e.printStackTrace();
 		}
 	}
 
-	public Day getDay() {
-		return day;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public String getSurname() {
-		return surname;
+	public List<Person> getPersons() {
+		return persons;
 	}
 
 }

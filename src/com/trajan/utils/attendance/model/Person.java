@@ -1,20 +1,24 @@
 package com.trajan.utils.attendance.model;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Person {
 
-	private String name;
-	private String surname;
-	private List<Day> days;
+	private String 		name;
+	private String 		surname;
+	private List<Row> 	rows;
+	private DayInfo 	dayInfo;
 
 	public Person() {
-		days = new ArrayList<Day>();
+		rows = new ArrayList<Row>();
+		dayInfo = new DayInfo();
 	}
 
-	public void addDay(Day day) {
-		days.add(day);
+	public void addRow(Row row) {
+		rows.add(row);
 	}
 
 	public String getName() {
@@ -33,12 +37,43 @@ public class Person {
 		this.surname = surname;
 	}
 
-	public List<Day> getDays() {
-		return days;
+	public List<Row> getRows() {
+		return rows;
 	}
 
-	public void setDays(List<Day> days) {
-		this.days = days;
+	public void setRows(List<Row> rows) {
+		this.rows = rows;
+	}
+
+	public DayInfo getDayInfo() {
+		return dayInfo;
+	}
+
+	public void setDayInfo(DayInfo dayInfo) {
+		this.dayInfo = dayInfo;
+	}
+
+	public void printPersonInfo() {
+		DateFormat df = new SimpleDateFormat("dd. MM. yyyy HH:mm:ss");
+		System.out.println();
+		System.out.println(name + " " + surname);
+		System.out.println("--------------------------------------------------------------");
+		System.out.println();
+		System.out.format("%-15s%-30s", "Arrived:", df.format(dayInfo.getArrived()));
+		System.out.println();
+		System.out.format("%-15s%-30s", "Left:", df.format(dayInfo.getLeft()));
+		System.out.println();
+		System.out.format("%-15s%-20s", "Diff:", dayInfo.getDiff().toString());
+		System.out.println();
+		System.out.println();
+
+		System.out.format("%-15s%-30s", "Inside:", dayInfo.getInside().toString());
+		System.out.println();
+		System.out.format("%-15s%-30s", "Outside:", dayInfo.getOutside().toString());
+		System.out.println();
+		System.out.format("%-15s%-30s", "Total:", dayInfo.getTotal().toString());
+		System.out.println();
+		System.out.println();
 	}
 
 }

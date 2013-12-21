@@ -2,9 +2,9 @@ package com.trajan.utils.attendance.analyzer;
 
 import java.util.Date;
 
-import com.trajan.utils.attendance.model.Day;
-import com.trajan.utils.attendance.model.DayRow;
 import com.trajan.utils.attendance.model.ElapsedTime;
+import com.trajan.utils.attendance.model.Person;
+import com.trajan.utils.attendance.model.Row;
 import com.trajan.utils.attendance.model.enums.EventType;
 
 public class DayAnalyzer {
@@ -12,20 +12,20 @@ public class DayAnalyzer {
 	public DayAnalyzer() {
 	}
 
-	public void analyzeDay(Day day) {
-		DayRow firstArrive = null;
-		DayRow previousRow = null;
-//		DayRow lastArrive = null;
-//		DayRow lastLeave = null;
+	public void analyzePerson(Person person) {
+		Row firstArrive = null;
+		Row previousRow = null;
+		Row lastLeave = null;
 
 		Date inside = new Date();
 		Date outside = new Date();
 		Date total = new Date();
+		Date diff = new Date();
 		inside.setTime(0l);
 		outside.setTime(0l);
-		for (int i = 0; i < day.getRows().size(); i++) {
+		for (int i = 0; i < person.getRows().size(); i++) {
 
-			DayRow currentRow = day.getRows().get(i);
+			Row currentRow = person.getRows().get(i);
 			if (firstArrive == null && isLeave(currentRow)) {
 				continue;
 			}
@@ -36,6 +36,7 @@ public class DayAnalyzer {
 			}
 
 			if (isLeave(currentRow) && isArrive(previousRow)) {
+				lastLeave = currentRow;
 				inside.setTime(inside.getTime()
 						+ getTimeDiffeceMillis(previousRow, currentRow));
 			}
@@ -46,20 +47,25 @@ public class DayAnalyzer {
 			previousRow = currentRow;
 		}
 		total.setTime(inside.getTime() + outside.getTime());
-		day.setElapsedInside(new ElapsedTime(inside));
-		day.setElapsedOutside(new ElapsedTime(outside));
-		day.setElapsedTotal(new ElapsedTime(total));
+		diff .setTime(lastLeave.getTime().getTime() - firstArrive.getTime().getTime());
+
+		person.getDayInfo().setArrived(firstArrive.getTime());
+		person.getDayInfo().setLeft(lastLeave.getTime());
+		person.getDayInfo().setDiff(new ElapsedTime(diff));
+		person.getDayInfo().setInside(new ElapsedTime(inside));
+		person.getDayInfo().setOutside(new ElapsedTime(outside));
+		person.getDayInfo().setTotal(new ElapsedTime(total));
 	}
 
-	private boolean isArrive(DayRow row) {
+	private boolean isArrive(Row row) {
 		return row.getType() == EventType.ARRIVE;
 	}
 
-	private boolean isLeave(DayRow row) {
+	private boolean isLeave(Row row) {
 		return row.getType() == EventType.LEAVE;
 	}
 
-	private long getTimeDiffeceMillis(DayRow previousRow, DayRow currentRow) {
+	private long getTimeDiffeceMillis(Row previousRow, Row currentRow) {
 		return currentRow.getTime().getTime() - previousRow.getTime().getTime();
 	}
 
