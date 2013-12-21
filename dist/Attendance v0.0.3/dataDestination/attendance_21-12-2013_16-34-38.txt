@@ -1,0 +1,33 @@
+
+Carodej Hnedy(korektne)
+--------------------------------------------------------------
+Arrived:       17. 12. 2013 08:11:54         
+Left:          17. 12. 2013 16:50:59         
+Diff:          8 hours, 39 minutes, 5 seconds
+
+Inside:        8 hours, 17 minutes, 57 seconds
+Outside:       0 hours, 21 minutes, 8 seconds
+Total:         8 hours, 39 minutes, 5 seconds
+
+
+Bentli Dymove(viacnasobneVstupy)
+--------------------------------------------------------------
+Arrived:       17. 12. 2013 08:11:54         
+Left:          17. 12. 2013 16:50:59         
+Diff:          8 hours, 39 minutes, 5 seconds
+
+Inside:        7 hours, 57 minutes, 20 seconds
+Outside:       0 hours, 21 minutes, 8 seconds
+Total:         8 hours, 18 minutes, 28 seconds
+
+
+Pali Kabela(viacnasobneVystupy)
+--------------------------------------------------------------
+Arrived:       17. 12. 2013 08:11:54         
+Left:          17. 12. 2013 16:50:59         
+Diff:          8 hours, 39 minutes, 5 seconds
+
+Inside:        7 hours, 39 minutes, 8 seconds
+Outside:       0 hours, 21 minutes, 8 seconds
+Total:         8 hours, 0 minutes, 16 seconds
+

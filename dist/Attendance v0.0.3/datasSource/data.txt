@@ -1,0 +1,94 @@
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet cursus sem a luctus. Nulla diam justo, 
+lobortis sit amet ultrices a, faucibus vitae nisl. Vivamus dui velit, eleifend ut commodo eu, aliquet ut ligula. 
+Etiam fermentum ullamcorper mi ut gravida. Nulla faucibus felis blandit magna faucibus, sit amet facilisis tortor 
+ultrices. Phasellus posuere ultricies aliquam. Maecenas interdum erat nec mi consequat convallis ut ac velit. Ut et 
+rhoncus augue, eget malesuada risus. Fusce sed dictum orci. Donec mattis libero vitae tortor gravida vulputate. 
+Etiam fermentum mollis mi nec fermentum. Nunc vulputate, nunc eget congue ultrices, magna dui sollicitudin odio, 
+at pretium eros mauris accumsan justo. Nunc non lorem sed velit rhoncus malesuada a nec justo. In viverra fringilla 
+massa, sit amet adipiscing quam consectetur eu.
+
+Fusce rhoncus tempus pharetra. Cras malesuada libero quis dolor lobortis gravida. Vivamus non blandit metus. 
+Vestibulum ipsum tortor, semper sed bibendum vitae, malesuada nec metus. Aenean malesuada enim eu feugiat lacinia. 
+Nam bibendum quis turpis a pellentesque. Duis ultrices, mi ut eleifend pharetra, augue dolor varius magna, sit 
+amet euismod dui justo lacinia ligula. Proin porttitor elit odio. Curabitur pretium dictum accumsan. Donec convallis 
+risus augue, ut mollis augue iaculis ac. Proin mattis venenatis dictum. Nullam sit amet aliquam erat, vel rhoncus est. 
+Pellentesque condimentum posuere mollis. Curabitur vehicula enim ipsum, vitae bibendum ipsum ultricies ut.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit semper lorem, vitae ornare justo 
+elementum nec. Nam lectus nunc, consectetur nec condimentum eu, lacinia eu felis. Phasellus iaculis mi vel turpis 
+vestibulum imperdiet. Vestibulum tempor tortor neque, quis consectetur nunc gravida non. Donec varius tincidunt 
+consectetur. Nulla congue nisi tellus, ut vehicula est hendrerit eget. Donec sit amet nisi imperdiet, tincidunt tortor 
+id, suscipit metus. Etiam volutpat felis metus, tincidunt posuere orci consectetur et. Pellentesque sollicitudin 
+mi eu massa accumsan, vel vestibulum dolor imperdiet. Vestibulum tristique mollis blandit.
+
+Nullam pellentesque, velit nec posuere convallis, magna dolor porta magna, at elementum dolor urna in mauris. 
+Cras eget pretium metus. Duis feugiat auctor urna, in suscipit arcu tincidunt vel. Ut ut orci id purus accumsan 
+pretium. Proin tempor molestie enim, at suscipit libero tempus a. Sed neque orci, posuere nec tellus in, luctus 
+rutrum mi. Nam consectetur venenatis varius. Fusce convallis elit tortor, a ullamcorper risus tincidunt sit amet. 
+Donec tristique scelerisque feugiat. Nam ante turpis, ultrices ac orci fermentum, ornare fermentum enim. Cras ornare 
+congue nisl in egestas. Nulla semper, velit sed suscipit accumsan, libero lacus semper tortor, ut cursus enim sapien 
+et erat. Maecenas placerat lacus enim, eget mattis neque varius eget. Donec ut arcu vitae sem interdum vehicula.
+
+
+Pro osobu: Hnedy(korektne) Carodej
+------------------------------------------------------------------------------------------
+17.12.2013 8:11:54   82       Hnedy Carodej                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 10:59:00  82       Hnedy Carodej                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 11:00:08  82       Hnedy Carodej                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 13:21:07  82       Hnedy Carodej                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 13:28:14  82       Hnedy Carodej                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 13:32:33  82       Hnedy Carodej                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 13:32:52  82       Hnedy Carodej                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 14:10:42  82       Hnedy Carodej                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 14:14:33  82       Hnedy Carodej                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 15:37:20  82       Hnedy Carodej                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 15:37:36  82       Hnedy Carodej                  15 34692       NTAS Room / Ntas Vstup     Odchod osoby c. 82                                                                                                                                                                                      
+17.12.2013 16:01:21  82       Hnedy Carodej                  15 34692       NTAS Room / Ntas Vystup    Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 16:01:40  82       Hnedy Carodej                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 16:15:39  82       Hnedy Carodej                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 16:23:47  82       Hnedy Carodej                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 16:50:59  82       Hnedy Carodej                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82   
+  
+
+Pro osobu: Dymove(viacnasobneVstupy) Bentli
+------------------------------------------------------------------------------------------
+17.12.2013 8:11:54   82       Dymove Bentli                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 10:59:00  82       Dymove Bentli                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 11:00:08  82       Dymove Bentli                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 13:21:07  82       Dymove Bentli                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 13:28:14  82       Dymove Bentli                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 13:32:33  82       Dymove Bentli                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 13:32:52  82       Dymove Bentli                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 14:10:42  82       Dymove Bentli                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 14:14:33  82       Dymove Bentli                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 14:16:37  82       Dymove Bentli                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 14:35:10  82       Dymove Bentli                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 15:37:20  82       Dymove Bentli                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 15:37:36  82       Dymove Bentli                  15 34692       NTAS Room / Ntas Vstup     Odchod osoby c. 82                                                                                                                                                                                      
+17.12.2013 16:01:21  82       Dymove Bentli                  15 34692       NTAS Room / Ntas Vystup    Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 16:01:40  82       Dymove Bentli                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 16:15:39  82       Dymove Bentli                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 16:23:47  82       Dymove Bentli                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 16:50:59  82       Dymove Bentli                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82     
+
+
+Pro osobu: Kabela(viacnasobneVystupy) Pali
+------------------------------------------------------------------------------------------
+17.12.2013 8:11:54   82       Kabela Pali                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 10:20:11  82       Kabela Pali                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 10:45:24  82       Kabela Pali                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 10:59:00  82       Kabela Pali                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 11:00:08  82       Kabela Pali                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 13:21:07  82       Kabela Pali                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 13:28:14  82       Kabela Pali                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 13:32:33  82       Kabela Pali                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 13:32:52  82       Kabela Pali                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 14:10:42  82       Kabela Pali                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 14:14:33  82       Kabela Pali                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 15:37:20  82       Kabela Pali                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 15:37:36  82       Kabela Pali                  15 34692       NTAS Room / Ntas Vstup     Odchod osoby c. 82                                                                                                                                                                                      
+17.12.2013 16:01:21  82       Kabela Pali                  15 34692       NTAS Room / Ntas Vystup    Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 16:01:40  82       Kabela Pali                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 16:15:39  82       Kabela Pali                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 16:23:47  82       Kabela Pali                  15 34692       1st Floor / Vstup 3        Príchod osoby c. 82                                                                                                                                                                                     
+17.12.2013 16:50:59  82       Kabela Pali                  15 34692       1st Floor / Vystup 3       Príchod osoby c. 82     
